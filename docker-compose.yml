@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  snr_databases:
+    hostname: snr_databases
+    container_name: snr_databases
+    restart: always
+    build:
+      context: "."
+    ports:
+      - 7070:8080
